@@ -1,5 +1,5 @@
 from spotdl import Spotdl
-from spotdl.download import Downloader
+#from spotdl.download.downloader import Downloader
 from spotdl.types.playlist import Playlist
 from spotdl.types.song import Song
 import dotenv
