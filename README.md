@@ -1,2 +1,5 @@
-# **PERPETUAL STREAM MACHINE**  
+# **PERPETUAL MUSIC MACHINE**  
 All-in-one tool for managing online radio stations through Icecast and Liquidsoap.
+
+## GOALS
+1. From a Spotify Playlist URL - Download all the music and generate a playlist m3u consisting of the downloaded songs.
