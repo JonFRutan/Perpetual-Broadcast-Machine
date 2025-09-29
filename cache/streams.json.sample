@@ -1,0 +1,8 @@
+{
+    "name": "name the stream",
+    "description": "describe the station here",
+    "playlist_ref": "sample",
+    "spotify_href": "https://open.spotify.com/playlist/xxxxxxxxxxxxxx",
+    "crossfade": true,
+    "dummy": null
+}

@@ -43,11 +43,11 @@ class Spdl:
             "set_live": False,
             "output": meta.LOCAL_MUSIC_STORAGE+'/{title}'
         }
-        Path(f"{meta.LOCAL_PLAYLIST_STORAGE}/{playlist_reference}.m3u8").touch()
-        m3u.create_m3u_file(playlist_reference, playlist, settings["output"], "m3u8")
+        playlist_path = Path(f"{meta.LOCAL_PLAYLIST_STORAGE}/{playlist_reference}.m3u8")
+        temp_path = Path(f"{playlist_reference}.m3u")
+        m3u.create_m3u_file(temp_path, playlist, settings["output"], "m3u8")
+        temp_path.rename(playlist_path)
         downloader = Downloader(settings)
-        print(settings["m3u"])
-        #m3u.create_m3u_file(f"{meta.LOCAL_PLAYLIST_STORAGE}/{playlist_reference}", playlist, )
         return downloader.download_multiple_songs(playlist)
 
     def grab_song_titles_from_playlist_url(self, url):
